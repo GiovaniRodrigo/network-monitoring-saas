@@ -40,6 +40,8 @@ Entregas já iniciadas:
   decisão por Angular no dashboard.
 - [`adrs/adr-003-atomic-design.md`](./adrs/adr-003-atomic-design.md):
   organização do frontend com Atomic Design.
+- [`DESIGN.md`](./DESIGN.md): diretrizes do design system, princípios de UX,
+  componentes, tokens, estados visuais e evolução da experiência do dashboard.
 - [`# Implementation Plan - Initial Project .md`](./%23%20Implementation%20Plan%20-%20Initial%20Project%20.md):
   estrutura inicial em monorepo, Monitor de Recursos em Elixir/Phoenix e
   serviços especializados em Node.js/TypeScript.
@@ -70,6 +72,11 @@ Decisões consolidadas:
 
 - O `dashboard-web` será desenvolvido em Angular.
 - O frontend seguirá Atomic Design em componentes compartilhados.
+- A interface deve priorizar clareza operacional, dados primeiro, feedback
+  imediato, consistência, acessibilidade e escalabilidade multi-tenant.
+- O design system deve centralizar tokens de cor, tipografia, espaçamento,
+  grid, raio de borda e estados semânticos como sucesso, atenção, crítico,
+  info, sem dados e carregando.
 - O `resource_monitor` será o motor central de orquestração.
 - O `resource_monitor` será implementado em Elixir/Phoenix para favorecer
   concorrência, supervisão e tolerância a falhas.
@@ -136,12 +143,27 @@ Decisões consolidadas:
 - [x] Criar `apps/dashboard-web` como aplicação Angular.
 - [ ] Configurar estrutura `core`, `shared` e `features`.
 - [ ] Criar estrutura Atomic Design em `shared/ui`.
+- [ ] Implementar tokens iniciais do design system para cores semânticas,
+  neutros, tipografia, espaçamento, grid e raios.
+- [ ] Criar átomos compartilhados para tipografia, ícones, estados, labels e
+  elementos base de formulário.
+- [ ] Criar moléculas compartilhadas para card de métrica, badge de status,
+  input com filtro e tooltip técnico.
+- [ ] Criar organismos iniciais para tabelas de dispositivos, gráficos de
+  tráfego, painel de alertas e mapa de rede.
+- [ ] Definir templates de páginas para dashboard, inventário, alertas e
+  análise de tráfego.
 - [ ] Configurar rotas iniciais protegidas.
 - [ ] Criar serviços HTTP tipados para comunicação com o Monitor de Recursos.
 - [ ] Preparar interceptors para autenticação, erros e contexto de tenant.
 - [ ] Criar shell operacional do dashboard.
 - [ ] Criar telas iniciais para inventário, tráfego, geolocalização, anomalias,
   alertas e relatórios.
+- [ ] Implementar estados visuais consistentes para normal, degradação, crítico,
+  sem dados e carregando.
+- [ ] Garantir componentes de dados com ordenação, filtros, busca e paginação ou
+  virtualização.
+- [ ] Documentar variações de componentes e exemplos práticos de uso.
 
 ## Fase 4 - Multi-Tenancy e Segurança
 
@@ -184,6 +206,10 @@ Decisões consolidadas:
 
 ## Fase 8 - Evolução de Produto
 
+- [ ] Adicionar dark mode ao design system.
+- [ ] Permitir customização visual por tenant.
+- [ ] Evoluir acessibilidade do dashboard até critérios WCAG definidos.
+- [ ] Adicionar microinterações e animações com foco em feedback operacional.
 - [ ] Integrar SNMP.
 - [ ] Suportar NetFlow/sFlow.
 - [ ] Expandir relatórios operacionais.
@@ -201,7 +227,10 @@ Decisões consolidadas:
 3. Criar endpoint no `resource_monitor` para iniciar requisição monitorada.
 4. Fazer o `resource_monitor` chamar pelo menos um serviço Node.js.
 5. Criar a estrutura `core`, `shared`, `features` e `shared/ui` no dashboard.
-6. Documentar variáveis de ambiente e portas locais.
+6. Implementar os tokens iniciais do design system no dashboard.
+7. Criar os primeiros componentes compartilhados: card de métrica, badge de
+   status, input com filtro e tooltip técnico.
+8. Documentar variáveis de ambiente e portas locais.
 
 ## Critérios de Validação Inicial
 
@@ -217,3 +246,7 @@ Decisões consolidadas:
 - [ ] Requisições carregam contexto de tenant.
 - [ ] Reprocessamentos possuem limite de tentativas.
 - [ ] Contratos iniciais de API e eventos estão documentados.
+- [ ] Tokens iniciais do design system estão centralizados no dashboard.
+- [ ] Componentes compartilhados iniciais seguem Atomic Design.
+- [ ] Estados visuais críticos, degradação, sem dados e carregando estão
+  padronizados.
