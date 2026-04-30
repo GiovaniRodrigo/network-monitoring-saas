@@ -2,7 +2,7 @@
 
 **Autor:** *[Nome do autor]*
 **Data:** *[YYYY-MM-DD]*
-**Status:** *[Proposto | Aceito | Depreciado | Substituído]*
+**Status:** *[Proposto | Aceito | Descontinuado | Substituído]*
 
 ---
 

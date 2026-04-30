@@ -23,7 +23,7 @@
 
 ## 4. Serviço de IA (Padrões e Anomalias)
 
-### Funções:
+### Funções
 - Detectar padrões de uso
 - Identificar anomalias
 - Classificar comportamento de dispositivos
@@ -32,25 +32,25 @@
 - Aprender comportamento histórico
 - Gerar insights automáticos
 
-### Consome:
+### Consome
 - Dados de tráfego
 - Inventário
 - Geolocalização
 
-### Produz:
+### Produz
 - Eventos de alerta
 - Classificações
 - Insights
 - Previsões
 
 ## 5. SaaS Dashboard
-- Interface do cliente 
-- Visualização de dispositivos 
-- Gráficos de banda 
-- Gráficos de tráfego 
-- Gráficos de latência 
-- Gráficos de perda de pacotes 
-- Mapas 
-- Alertas 
-- Relatórios 
+- Interface do cliente
+- Visualização de dispositivos
+- Gráficos de banda
+- Gráficos de tráfego
+- Gráficos de latência
+- Gráficos de perda de pacotes
+- Mapas
+- Alertas
+- Relatórios
 - Inventário visual

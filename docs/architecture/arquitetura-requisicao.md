@@ -1,13 +1,14 @@
 # Arquitetura de Requisição
 
-**Projeto:** SaaS Red Monitor  
+**Projeto:** SaaS de Monitoramento de Rede
 **Fonte visual:** [`../Requisição.png`](../Requisição.png)
 
 ---
 
 ## Visão Geral
 
-Esta arquitetura descreve o fluxo de uma requisição no **SaaS Red Monitor**.
+Esta arquitetura descreve o fluxo de uma requisição no **SaaS de Monitoramento
+de Rede**.
 O **SaaS Dashboard** envia requisições para o **Monitor de Recursos**, que atua
 como motor principal do software e coordena os serviços internos de
 monitoramento, descoberta, inventário, geolocalização, coleta de tráfego e
@@ -150,5 +151,5 @@ evitar ciclos infinitos.
 ## Relacionamentos
 
 - Relacionado a: [`../README.md`](../README.md)
-- Relacionado a: [`../adrs/adr-001-microserviço`](../adrs/adr-001-microserviço)
+- Relacionado a: [`../adrs/adr-001-microserviço.md`](../adrs/adr-001-microserviço.md)
 - Relacionado a: [`../adrs/adr-002-angular-frontend.md`](../adrs/adr-002-angular-frontend.md)
