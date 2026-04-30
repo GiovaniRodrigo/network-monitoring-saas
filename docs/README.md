@@ -235,9 +235,4 @@ Responsabilidades:
 
 ## Roadmap
 
-- [ ] Integração com SNMP.
-- [ ] Suporte a NetFlow/sFlow.
-- [ ] Motor avançado de machine learning.
-- [ ] Alertas inteligentes com autoajuste.
-- [ ] API pública para integrações externas.
-- [ ] Gestão de planos e limites de consumo por tenant.
+Consulte o [Roadmap consolidado](./ROADMAP.md).
