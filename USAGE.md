@@ -16,6 +16,52 @@ O projeto é composto por:
 Consulte [`INSTALL.md`](./INSTALL.md) antes de iniciar os serviços pela primeira
 vez.
 
+## Atalhos com Makefile
+
+O repositório possui um `Makefile` para concentrar os comandos mais usados.
+
+Liste os comandos disponíveis:
+
+```bash
+make help
+```
+
+Prepare o ambiente local:
+
+```bash
+make setup
+```
+
+Inicie serviços individuais:
+
+```bash
+make dev-dashboard
+make dev-resource-monitor
+make dev-discovery
+make dev-traffic
+make dev-geo
+make dev-ai
+```
+
+Ou inicie todos os serviços de desenvolvimento em um terminal:
+
+```bash
+make dev-all
+```
+
+Builds e testes:
+
+```bash
+make build
+make test
+```
+
+Health checks dos serviços Node.js:
+
+```bash
+make health
+```
+
 ## Subir o Dashboard
 
 Na raiz do repositório:
