@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: light;
+
+  --status-online: #10b981;
+  --status-warning: #f59e0b;
+  --status-critical: #ef4444;
+  --status-offline: #6b7280;
+
+  --metric-excellent: #10b981;
+  --metric-good: #22c55e;
+  --metric-moderate: #f59e0b;
+  --metric-poor: #ef4444;
+
+  --bandwidth-upload: #3b82f6;
+  --bandwidth-download: #8b5cf6;
+  --latency: #ec4899;
+  --packet-loss: #ef4444;
+
+  --color-bg: #f6f8fb;
+  --color-surface: #ffffff;
+  --color-surface-strong: #f9fafb;
+  --color-text: #111827;
+  --color-muted-strong: #4b5563;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-info: #2563eb;
+  --grid-line: rgba(17, 24, 39, 0.06);
+
+  --online-soft: #d1fae5;
+  --warning-soft: #fef3c7;
+  --critical-soft: #fee2e2;
+  --offline-soft: #e5e7eb;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: oklch(0.145 0 0);
+    --color-surface: #171b22;
+    --color-surface-strong: #11151b;
+    --color-text: #f9fafb;
+    --color-muted-strong: #cbd5e1;
+    --color-muted: #94a3b8;
+    --color-border: #293241;
+    --grid-line: rgba(255, 255, 255, 0.06);
+    --online-soft: rgba(16, 185, 129, 0.16);
+    --warning-soft: rgba(245, 158, 11, 0.16);
+    --critical-soft: rgba(239, 68, 68, 0.16);
+    --offline-soft: rgba(107, 114, 128, 0.18);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.22);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
